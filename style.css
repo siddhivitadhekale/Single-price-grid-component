@@ -24,6 +24,7 @@
 }
 
 h1,
+h2,
 h3 {
   line-height: 1.1;
 }
@@ -77,7 +78,7 @@ body {
   font-weight: var(--font-weight-700);
   padding-bottom: 20px;
 }
-h3 {
+h2 {
   color: var(--Primary-Bright-Yellow);
   font-size: var(--font-size-body);
   letter-spacing: 1.1;
@@ -90,14 +91,14 @@ p {
   letter-spacing: 1.5;
 }
 
-h4 {
+h3 {
   color: white;
   font-weight: var(--font-weight-700);
   font-size: 18px;
   padding: 10px 0px;
 }
 
-h5 {
+h4 {
   margin: 10px 0px;
 }
 .price {
