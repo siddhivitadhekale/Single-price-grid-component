@@ -90,9 +90,9 @@ p {
   letter-spacing: 1.5;
 }
 
-h2 {
+h4 {
   color: white;
-  font-weight: var(--font-weight-400);
+  font-weight: var(--font-weight-700);
   font-size: 18px;
   padding: 10px 0px;
 }
