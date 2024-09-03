@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap");
+
+:root {
+  --Primary-Cyan: hsl(179, 62%, 43%);
+  --Primary-Bright-Yellow: hsl(71, 73%, 54%);
+
+  --Neutral-Light-Gray: hsl(204, 43%, 93%);
+  --Neutral-Grayish-Blue: hsl(216, 30%, 83%);
+
+  --font-size-body: 16px;
+  --font-size-heading: 24px;
+  --ff: "Karla", sans-serif;
+
+  --font-weight-400: 400;
+  --font-weight-700: 700;
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h3 {
+  line-height: 1.1;
+}
+
+body {
+  font-size: var(--font-size-body);
+  font-family: var(--ff);
+  font-weight: var(--font-weight-400);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--Neutral-Light-Gray);
+}
+
+.wrapper {
+  min-height: 100dvh;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.container {
+  max-width: 70em;
+  border-radius: 7px;
+  background-color: rgba(255, 255, 255, 0.897);
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-areas: "a a" "b c";
+}
+
+.box {
+  padding: 35px;
+}
+.join {
+  grid-area: a;
+}
+
+.sub {
+  grid-area: b;
+  background-color: hsl(179, 51%, 40%);
+}
+
+.why {
+  grid-area: c;
+  background-color: hsl(179, 62%, 43%);
+}
+
+/* typography */
+.join-title {
+  color: var(--Primary-Cyan);
+  font-size: var(--font-size-heading);
+  font-weight: var(--font-weight-700);
+  padding-bottom: 20px;
+}
+h3 {
+  color: var(--Primary-Bright-Yellow);
+  font-size: var(--font-size-body);
+  letter-spacing: 1.1;
+  font-weight: var(--font-weight-400);
+  padding: 15px 0px;
+}
+
+p {
+  color: var(--Neutral-Grayish-Blue);
+  letter-spacing: 1.5;
+}
+
+h2 {
+  color: white;
+  font-weight: var(--font-weight-400);
+  font-size: 18px;
+  padding: 10px 0px;
+}
+
+h5 {
+  margin: 10px 0px;
+}
+.price {
+  font-size: var(--font-size-heading);
+  font-weight: var(--font-weight-700);
+  color: white;
+  padding-right: 5px;
+}
+.priceSub {
+  color: var(--Primary-Cyan);
+  font-weight: var(--font-weight-700);
+  letter-spacing: 1.1;
+}
+a {
+  display: block;
+  background-color: var(--Primary-Bright-Yellow);
+  font-size: var(--font-size-body);
+  font-weight: var(--font-weight-700);
+  padding: 15px;
+  border-radius: 7px;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  margin: 20px 0px;
+}
+
+.why ul {
+  list-style: none;
+  color: var(--Neutral-Light-Gray);
+  letter-spacing: 1.2;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+@media only screen and (max-width: 375px) {
+  .container {
+    grid-template-columns: 100%;
+    grid-template-areas: "a" "b" "c";
+  }
+  .box {
+    padding: 20px;
+  }
+}
